@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">PRACTICE PROJECT</p>
+      <h1>Student Management System</h1>
+      <p class="subtitle">Add students and manage your class list.</p>
+    </header>
+
+    <section class="card">
+      <h2>Add a student</h2>
+      <form id="student-form">
+        <label for="student-name">Student name</label>
+        <input id="student-name" name="studentName" type="text" placeholder="e.g. Aaditya Sharma" required />
+
+        <label for="roll-number">Roll number</label>
+        <input id="roll-number" name="rollNumber" type="text" placeholder="e.g. CSE101" required />
+
+        <button type="submit">Add student</button>
+      </form>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <div class="list-heading">
+        <h2>Students</h2>
+        <span id="student-count" class="count">0 students</span>
+      </div>
+      <div id="empty-state" class="empty-state">No students yet. Add your first student above.</div>
+      <ul id="student-list" class="student-list"></ul>
+    </section>
+
+    <footer>Practice project for learning Git and GitHub.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

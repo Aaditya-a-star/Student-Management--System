@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #182230;
+  background: #f3f6fb;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.container {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #315bd6;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: #667085;
+  margin: 10px 0 0;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e3e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgb(24 34 48 / 5%);
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cfd6e2;
+  border-radius: 9px;
+  padding: 12px 13px;
+  font: inherit;
+  margin-bottom: 8px;
+}
+
+input:focus {
+  outline: 3px solid #dce5ff;
+  border-color: #315bd6;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 16px;
+  color: white;
+  background: #315bd6;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2448b5;
+}
+
+.message {
+  min-height: 1.2em;
+  margin: 12px 0 0;
+  color: #18794e;
+  font-size: 0.9rem;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.list-heading h2 {
+  margin-bottom: 0;
+}
+
+.count {
+  color: #667085;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  color: #667085;
+  background: #f8faff;
+  border: 1px dashed #cfd6e2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.student-item:last-child {
+  border-bottom: 0;
+}
+
+.student-name {
+  display: block;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.student-roll {
+  display: block;
+  color: #667085;
+  font-size: 0.88rem;
+  margin-top: 4px;
+}
+
+.delete-button {
+  background: #fff0f0;
+  color: #b42318;
+  padding: 8px 11px;
+  flex-shrink: 0;
+}
+
+.delete-button:hover {
+  background: #ffe0df;
+}
+
+footer {
+  color: #667085;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 12px 0;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 18px;
+  }
+
+  .student-item {
+    align-items: flex-start;
+  }
+}
